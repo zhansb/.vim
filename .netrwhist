@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/zhansb/project/rockchip/3188/src/4.2.2_r1_copy/kernel'
+let g:netrw_dirhist_2='/home/zhansb/project/rockchip/3188/src/4.2.2_r1_copy/kernel/kernel'
+let g:netrw_dirhist_3='/home/zhansb/project/rockchip/3188/src/4.2.2_r1_copy/kernel'
