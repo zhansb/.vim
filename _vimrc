@@ -149,3 +149,18 @@ let Tlist_Process_File_Always = 1
 let Tlist_Display_Prototype = 0
 let Tlist_Compact_Format = 1
 " let Tlist_GainFocus_On_ToggleOpen=1	"Jump to taglist window on open.
+
+"-----------------------------------------------------------------
+" F2 保存session到.svim
+"-----------------------------------------------------------------
+nmap <F2> :mks! .svim<CR>
+
+"-----------------------------------------------------------------
+" c 复制所选内容到系统粘帖板
+"-----------------------------------------------------------------
+map c "+y
+
+" vim无参数时，默认打开上次对话
+if filereadable(".svim") &&  argc() == 0
+	source .svim
+endif
