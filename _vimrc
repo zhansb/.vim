@@ -97,13 +97,15 @@ nmap <C-M>e :cs find e <C-R>=expand("<cword>")<CR><CR>:copen<CR>
 nmap <C-M>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-M>i :cs find i <C-R>=expand("<cfile>")<CR><CR>:copen<CR>
 nmap <C-M>d :cs find d <C-R>=expand("<cword>")<CR><CR>:copen<CR>
-endi
+
+map <C-F11> :!cscope -Rbq -f cscope.out<CR>
+endif
 
 "-----------------------------------------------------------------
 " plugin - catgs
 " Ctrl+F12 生成tags文件
 "-----------------------------------------------------------------
-map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-F10> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 "-----------------------------------------------------------------
 " plugin - NeoComplCache.vim 自动补全插件
