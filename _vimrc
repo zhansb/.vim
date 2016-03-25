@@ -48,6 +48,8 @@ set hlsearch
 set tabstop=4
 set cindent shiftwidth=4
 set autoindent shiftwidth=4
+" 用space替代tab的输入
+set expandtab
 " C/C++注释
 set comments=://
 " 修正自动C式样注释功能 <2005/07/16>
